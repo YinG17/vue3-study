@@ -1,30 +1,42 @@
 <template>
   <div id="nav">
-    <router-link to="/">Home</router-link> |
+    <router-link to="/">Home</router-link>
+    |
     <router-link to="/about">About</router-link>
+    |
+    <router-link to="/composition">Composition</router-link>
+    |
+    <router-link to="/options">Options</router-link>
+    |
+    <router-link to="/forms">Forms</router-link>
+    |
+    <router-link to="/events">Events</router-link>
+    |
+    <router-link to="/validation">Form Validations</router-link>
+    |
+    <router-link to="/validation2">Form Validations 2</router-link>
+    |
+    <router-link to="/validation3">Form Validations 3</router-link>
   </div>
+  <hr />
   <router-view />
 </template>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
 }
 
-#nav {
-  padding: 30px;
+.w-100 {
+  width: 100%;
 }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+.mt-5 {
+  margin-top: 1.5em;
 }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
+.pre-line {
+  white-space: pre-line;
 }
 </style>
